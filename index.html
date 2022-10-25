@@ -7,146 +7,197 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="max-width-100 margin-auto txalign-center">
     <div class="container">
-      <h2>Student Registeration Form</h2>
-      <hr />
-      <form action="">
-        <section class="up">
-          <div>
-            <label class="flex" for="first-name">Fristname :</label>
-            <input
-              type="text"
-              id="first-name"
-              placeholder="Firstname"
-              required
-            />
-          </div>
-          <div>
-            <label class="flex" for="middle-name">Middlename :</label>
-            <input
-              type="text"
-              id="middle-name"
-              placeholder="Middlename"
-              required
-            />
-          </div>
-          <div>
-            <label class="flex" for="last-name">Lastname :</label>
-            <input type="text" id="last-name" placeholder="Lastname" required />
-          </div>
-        </section>
-        <section class="course-gender">
-          <section class="course-section">
-            <label for="course">Course :</label>
-            <select name="course" id="course">
-              <option value="math">Math</option>
-              <option value="physics">Physics</option>
-              <option value="chemistry">Chemistry</option>
+      <div class="desc-product">
+        <video
+          autoplay
+          src="./video/1.mp4"
+          class="width-100per height-250 obj-cover"
+          loop="loop"
+          muted="muted"
+        >
+          your browser can not suport this video format
+        </video>
+
+        <img class="sound-off" src="./img/volume (1).png" alt="" />
+        <img class="sound-on active" src="./img/volume.png" alt="" />
+      </div>
+      <div class="width-900 margin-auto">
+        <div class="display-flex margin-y-30">
+          <section class="txalign-left font-12 flex-1">
+            <label for="laptob-model">Laptop model:</label>
+            <select
+              class="font-12 width-170 border-none outlin-none border-1-sol-ddd height-25px color-aaa padding-left-5"
+              name="model"
+              id="laptob-model"
+            >
+              <option value="nothing" selected>Nothing selected</option>
+              <option value="asus">Asus</option>
+              <option value="acer">Acer</option>
+              <option value="lenovo">Lenovo</option>
+              <option value="sony">Sony</option>
             </select>
           </section>
-          <section class="gender-section">
-            <span>Gender :</span>
-            <div class="checkbox-section">
-              <div class="male-section">
-                <input
-                  type="radio"
-                  id="male"
-                  name="your-gender"
-                  value="male"
-                  checked
-                />
-                <label for="male">Male</label>
-              </div>
-              <div class="female-section">
-                <input
-                  type="radio"
-                  id="female"
-                  name="your-gender"
-                  value="female"
-                />
-                <label for="female">Female</label>
-              </div>
-              <div class="other-section">
-                <input
-                  type="radio"
-                  id="other"
-                  name="your-gender"
-                  value="other"
-                />
-                <label for="other">Other</label>
-              </div>
-            </div>
+          <section class="txalign-left font-12 flex-1">
+            <label for="">Processor:</label>
+            <select
+              class="font-12 width-170 border-none outlin-none border-1-sol-ddd height-25px color-aaa padding-left-5"
+              name="model"
+              id="laptob-processor"
+            >
+              <option value="nothing" selected>Nothing selected</option>
+              <option value="core i3">core i3</option>
+              <option value="core i5">core i5</option>
+              <option value="core i7">core i7</option>
+              <option value="core i9">core i9</option>
+            </select>
           </section>
-        </section>
-        <section class="bottom">
-          <div class="phone-section">
-            <div>
-              <label class="flex">Phone</label>
-              <input
-                type="tel"
-                id="pre-phone-number"
-                placeholder="+98"
-                pattern="(\+98|0)"
-                maxlength="3"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="tel"
-                id="phone-number"
-                placeholder="phone no,"
-                pattern="9\d{9}$"
-                required
-              />
-            </div>
-          </div>
-          <div class="textarea-section">
-            <label class="flex" for="address">Current Address :</label>
-            <textarea
-              name="user address"
-              id="address"
-              cols="30"
-              rows="4"
-              placeholder="Current Address"
-              required
-            ></textarea>
-          </div>
-          <div class="email-section margin-top">
-            <label class="flex" for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              pattern="[a-z]+@gmail.com|+@yahoo.com"
-              required
+          <section class="txalign-left font-12 pos-rel flex-1">
+            <label for="">RAM:</label>
+            <img
+              class="width-20 height-20 pos-abs top-21 left-40"
+              src="./img/ram.png"
+              alt=""
             />
-          </div>
-          <div class="password-section margin-top">
-            <label class="flex" for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Enter Password"
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-              required
+            <select
+              class="font-12 width-170 border-none outlin-none border-1-sol-ddd height-25px back-col-2F82C4 col-fff txalign-center apper-none"
+              name="model"
+              id="laptob-ram"
+            >
+              <option value="nothing" selected>Ram</option>
+              <option value="core i3">core i3</option>
+              <option value="core i5">core i5</option>
+              <option value="core i7">core i7</option>
+              <option value="core i9">core i9</option>
+            </select>
+          </section>
+          <section class="txalign-left font-12 pos-rel flex-1">
+            <label for="">Hard disk:</label>
+            <img
+              class="width-20 height-20 pos-abs top-21 left-30"
+              src="./img/ram.png"
+              alt=""
             />
-          </div>
-          <div class="retype-password-section margin-top">
-            <label class="flex" for="retype-password">Re-type Password</label>
-            <input
-              type="password"
-              id="retype-password"
-              placeholder="Retype Password"
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-              required
-            />
-          </div>
-        </section>
-        <section class="btn">
-          <button>Register</button>
-        </section>
-      </form>
+            <select
+              class="font-12 width-170 border-none outlin-none border-1-sol-ddd height-25px back-col-2F82C4 col-fff txalign-center apper-none"
+              name="model"
+              id="laptob-hard"
+            >
+              <option value="nothing" selected>Hard disk</option>
+              <option value="256">256G</option>
+              <option value="500">500g</option>
+              <option value="1t">1TB</option>
+              <option value="1t">2TB</option>
+            </select>
+          </section>
+          <section class="txalign-left font-12 flex-1">
+            <label for="">Display:</label>
+            <select
+              class="font-12 width-170 border-none outlin-none border-1-sol-ddd height-25px color-aaa padding-left-5"
+              name="model"
+              id="laptob-display"
+            >
+              <option value="nothing" selected>Nothing selected</option>
+              <option value="high">High Definition (HD)</option>
+              <option value="full hd">Full HD, FHD</option>
+              <option value="2k">2K, Quad HD, QHD</option>
+            </select>
+          </section>
+        </div>
+        <hr />
+        <div class="menu-product">
+          <table class="margin-y-30 font-10">
+            <thead class="padding-y-30">
+              <tr>
+                <th>Laptop model</th>
+                <th>Picture</th>
+                <th>Processor</th>
+                <th>RAM</th>
+                <th>Hard disk</th>
+                <th>Display</th>
+                <th>Graphics</th>
+                <th>OS</th>
+                <th>Weight</th>
+                <th>Battery</th>
+                <th>Price</th>
+                <th>Purchase</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Acer Chromebook CB3-131-C3SZ</td>
+                <td>
+                  <img class="width-100" src="./img/download (1).jpg" alt="" />
+                </td>
+                <td>Intel celeron N2840 2.16 GHz</td>
+                <td>2GB DDR3</td>
+                <td>16GB SSD</td>
+                <td>11.6" HD IPS Screen (1366 x 768</td>
+                <td>Intel HD Graphics</td>
+                <td>Google Chrome Operating System</td>
+                <td>2.4 pounds</td>
+                <td>9h</td>
+                <td>$229</td>
+                <td><button>Buy now</button></td>
+              </tr>
+              <tr>
+                <td>Acer Chromebook CB3-131-C3SZ</td>
+                <td>
+                  <img class="width-100" src="./img/download (2).jpg" alt="" />
+                </td>
+                <td>Intel celeron N2840 2.16 GHz</td>
+                <td>2GB DDR3</td>
+                <td>16GB SSD</td>
+                <td>11.6" HD IPS Screen (1366 x 768</td>
+                <td>Intel HD Graphics</td>
+                <td>Google Chrome Operating System</td>
+                <td>2.4 pounds</td>
+                <td>9h</td>
+                <td>$229</td>
+                <td><button>Buy now</button></td>
+              </tr>
+              <tr>
+                <td>Acer Chromebook CB3-131-C3SZ</td>
+                <td>
+                  <img class="width-100" src="./img/images (1).jpg" alt="" />
+                </td>
+                <td>Intel celeron N2840 2.16 GHz</td>
+                <td>2GB DDR3</td>
+                <td>16GB SSD</td>
+                <td>11.6" HD IPS Screen (1366 x 768</td>
+                <td>Intel HD Graphics</td>
+                <td>Google Chrome Operating System</td>
+                <td>2.4 pounds</td>
+                <td>9h</td>
+                <td>$229</td>
+                <td><button>Buy now</button></td>
+              </tr>
+              <tr>
+                <td>Acer Chromebook CB3-131-C3SZ</td>
+                <td>
+                  <img
+                    class="width-100"
+                    src="./img/lenovo-ideapad-5-front.jpg"
+                    alt=""
+                  />
+                </td>
+                <td>Intel celeron N2840 2.16 GHz</td>
+                <td>2GB DDR3</td>
+                <td>16GB SSD</td>
+                <td>11.6" HD IPS Screen (1366 x 768</td>
+                <td>Intel HD Graphics</td>
+                <td>Google Chrome Operating System</td>
+                <td>2.4 pounds</td>
+                <td>9h</td>
+                <td>$229</td>
+                <td><button>Buy now</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
