@@ -4,9 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
-    <script src="./script.js"></script>
+    <div class="container">
+      <h2>Student Registeration Form</h2>
+      <hr />
+      <form action="">
+        <section class="up">
+          <div>
+            <label class="flex" for="first-name">Fristname :</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Firstname"
+              required
+            />
+          </div>
+          <div>
+            <label class="flex" for="middle-name">Middlename :</label>
+            <input
+              type="text"
+              id="middle-name"
+              placeholder="Middlename"
+              required
+            />
+          </div>
+          <div>
+            <label class="flex" for="last-name">Lastname :</label>
+            <input type="text" id="last-name" placeholder="Lastname" required />
+          </div>
+        </section>
+        <section class="course-gender">
+          <section class="course-section">
+            <label for="course">Course :</label>
+            <select name="course" id="course">
+              <option value="math">Math</option>
+              <option value="physics">Physics</option>
+              <option value="chemistry">Chemistry</option>
+            </select>
+          </section>
+          <section class="gender-section">
+            <span>Gender :</span>
+            <div class="checkbox-section">
+              <div class="male-section">
+                <input
+                  type="radio"
+                  id="male"
+                  name="your-gender"
+                  value="male"
+                  checked
+                />
+                <label for="male">Male</label>
+              </div>
+              <div class="female-section">
+                <input
+                  type="radio"
+                  id="female"
+                  name="your-gender"
+                  value="female"
+                />
+                <label for="female">Female</label>
+              </div>
+              <div class="other-section">
+                <input
+                  type="radio"
+                  id="other"
+                  name="your-gender"
+                  value="other"
+                />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="bottom">
+          <div class="phone-section">
+            <div>
+              <label class="flex">Phone</label>
+              <input
+                type="tel"
+                id="pre-phone-number"
+                placeholder="+98"
+                pattern="(\+98|0)"
+                maxlength="3"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                id="phone-number"
+                placeholder="phone no,"
+                pattern="9\d{9}$"
+                required
+              />
+            </div>
+          </div>
+          <div class="textarea-section">
+            <label class="flex" for="address">Current Address :</label>
+            <textarea
+              name="user address"
+              id="address"
+              cols="30"
+              rows="4"
+              placeholder="Current Address"
+              required
+            ></textarea>
+          </div>
+          <div class="email-section margin-top">
+            <label class="flex" for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              pattern="[a-z]+@gmail.com|+@yahoo.com"
+              required
+            />
+          </div>
+          <div class="password-section margin-top">
+            <label class="flex" for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter Password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+              required
+            />
+          </div>
+          <div class="retype-password-section margin-top">
+            <label class="flex" for="retype-password">Re-type Password</label>
+            <input
+              type="password"
+              id="retype-password"
+              placeholder="Retype Password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+              required
+            />
+          </div>
+        </section>
+        <section class="btn">
+          <button>Register</button>
+        </section>
+      </form>
+    </div>
   </body>
 </html>

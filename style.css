@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: #add8e6;
+  width: 600px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 15px 25px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #eee;
+}
+
+input::placeholder,
+label,
+textarea::placeholder,
+select,
+span {
+  font-size: 12px;
+}
+
+form {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+hr {
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+}
+
+.up div {
+  margin-bottom: 10px;
+}
+
+.course-gender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.course-section {
+  margin-top: 10px;
+}
+
+.gender-section {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.checkbox-section {
+  display: flex;
+  gap: 20px;
+  margin-left: 5px;
+}
+
+.checkbox-section input {
+  appearance: none;
+  position: relative;
+  border-radius: 100%;
+  background-color: #ddd;
+  padding: 5px;
+  width: 11px;
+  height: 11px;
+}
+.checkbox-section input:checked::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 11px;
+  right: 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: rgb(82, 82, 82);
+}
+
+.checkbox-section div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.phone-section {
+  margin-top: 10px;
+}
+
+.phone-section div {
+  margin-bottom: 15px;
+}
+
+.textarea-section {
+  text-align: left;
+}
+textarea {
+  width: 100%;
+  border: none;
+  background-color: #eee;
+  padding: 8px 10px;
+}
+
+.margin-top {
+  margin-top: 15px;
+}
+
+.margin-top label {
+  font-weight: bold;
+}
+
+.btn {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.btn button {
+  background-color: #56b35f;
+  border: none;
+  width: 95%;
+  height: 32px;
+  color: white;
+}
