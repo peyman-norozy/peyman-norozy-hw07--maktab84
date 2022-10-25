@@ -1,16 +1,26 @@
-// const array1 = [5, 6, 2];
-// const array2 = [3, 7, 1];
-// const array3 = [2, 4, 8];
-
-const array = [
-  [5, 6, 2],
-  [3, 7, 1],
-  [2, 4, 8],
+let values = [
+  "Hare",
+  "Krishna",
+  "Hare",
+  "Krishna",
+  "Krishna",
+  "Krishna",
+  "Hare",
+  "Hare",
+  ":-O",
+  1,
+  1,
+  2,
+  true,
+  true,
+  false,
 ];
 
-function sort(arr) {
-  let arrayTotal = [];
-  arr.map((item) => arrayTotal.push(...item));
-  return arrayTotal.sort((a, b) => b - a).join();
+function unique(arr) {
+  let array = [];
+  const ordersSet = new Set(arr);
+  ordersSet.forEach((item) => array.push(item));
+  return array;
 }
-console.log(sort(array));
+
+console.log(unique(values));
